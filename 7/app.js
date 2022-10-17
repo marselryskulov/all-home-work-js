@@ -59,10 +59,6 @@ function render() {
         deleteButton.onclick = () => {
             div.remove(list[i].id)
         }
-        // deleteButton.onclick = () => {
-        //     div.remove()
-        
-        // }
 
 
         buttons.append(changeButton, deleteButton);
@@ -80,12 +76,13 @@ function render() {
 }
 
 //render()
+ 
 
 function handleClick() {
     event.preventDefault()
     const object = {
         id: list.length + 1,
-        text: input.value
+        text: input.value     
     }
 list.push(object);
 console.log(list)
